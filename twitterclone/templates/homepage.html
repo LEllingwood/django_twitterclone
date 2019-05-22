@@ -1,0 +1,10 @@
+Homepage:
+<br>
+
+{% for tweet in data %}
+<li><a href='/twitter_user/{{ tweet.tweet_by.person.username }}/'>{{ tweet.tweet_by }}</a></li> 
+<li><a href='/tweet/{{ tweet.tweet_text }}/'>{{ tweet.tweet_text }}</a></li> 
+{% endfor %}
+
+
+{{ tweet.tweet_text }}
